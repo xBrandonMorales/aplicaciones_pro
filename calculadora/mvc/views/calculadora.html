@@ -1,22 +1,23 @@
 $def with (resultado)
+<div style="margin: 0 auto; box-sizing: border-box; border: 2px solid #000; max-width: 400px; width: 80%;">
 <div style="text-align: center;">
 <form method="POST">
     <label>
-        Numero 1: 
+        Num 1: 
         <input type="number" name="numero1">
     </label>
     <br><br>
     <label>
-        Numero 2:
+        Num 2:
         <input type="number" name="numero2">
     </label>
     <br><br>
-    <button type="submit">Sumar</button>
+    <button style="background-color: green" type="submit">Sumar</button>
     <br><br>
-    <label>
+    <label style="color: red;">
         Resultado:
         <span id="resultado">
-            <!-- Aquí se mostrará el resultado de la suma -->
+            <!-- Resultado Suma -->
             $if resultado is None:
                 0
             $else:
@@ -24,4 +25,5 @@ $def with (resultado)
         </span>
     </label>
 </form>
+</div>
 </div>

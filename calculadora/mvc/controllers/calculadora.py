@@ -9,7 +9,7 @@ class Calculadora:
             return render.calculadora(resultado=None)
         except Exception as e:
             print(f"Error 101 - index {e.args}")
-            return "Upsi algo salió mal"
+            return "Algo salio mal"
 
     def POST(self):
         try:
@@ -20,4 +20,4 @@ class Calculadora:
             return render.calculadora(resultado=resultado)
         except Exception as e:
             print(f"Error 102 - index {e.args}")
-            return "Upsi algo salió mal"
+            return "mal"

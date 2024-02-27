@@ -1,7 +1,6 @@
 """Framework web.py """
 import web
 
-# Rutas de los controladores
 urls = (
     '/', 'mvc.controllers.calculadora.Calculadora'
 )
