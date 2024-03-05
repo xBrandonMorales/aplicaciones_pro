@@ -10,31 +10,41 @@
             align-items: center;
             height: 100vh;
             margin: 0;
+            background-color: #f8f9fa; /* Cambiando el color de fondo */
         }
         .container {
             text-align: center;
+            background-color: white; /* Cambiando el color del contenedor */
+            border-radius: 10px; /* Agregando bordes redondeados al contenedor */
+            padding: 20px; /* Agregando espacio interno al contenedor */
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Agregando sombra al contenedor */
+        }
+        .btn-group {
+            margin-top: 10px; /* Agregando un margen entre los botones */
         }
     </style>
 </head>
 <body>
     <div class="container">
-        <h1>Insertar Nuevo Producto</h1>
+        <h1>Insertar Producto</h1>
         <form method="POST" action="/insertar_producto">
             <div class="form-group">
-                <label for="nombre">Nombre:</label>
+                <label for="nombre">Producto</label>
                 <input type="text" id="nombre" name="nombre" class="form-control" required>
-                <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                    <button type="button" class="btn btn-warning">Editar</button>
-                    <button type="button" class="btn btn-success">Eliminar</button>
-                </div>
             </div>
             <div class="form-group">
-                <label for="precio">Precio:</label>
+                <label for="precio">Precio</label>
                 <input type="text" id="precio" name="precio" class="form-control" required>
             </div>
-            <button type="submit" class="btn btn-secondary mt-3">Insertar Producto</button>
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                <button type="button" class="btn btn-warning">Editar</button>
+            </div>
+            <div class="btn-group" role="group" aria-label="Basic mixed styles example">
+                <button type="button" class="btn btn-danger">Eliminar</button>
+            </div>
+            <button type="submit" class="btn btn-info mt-3">Insertar Producto</button>
         </form>
-        <a class="btn btn-secondary mt-3" href="/">Volver a la Lista de Productos</a>
+        <a class="btn btn-dark mt-3" href="/">Volver</a>
     </div>
 </body>
 </html>
